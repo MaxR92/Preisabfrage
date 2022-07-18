@@ -1,7 +1,7 @@
 function calc() {
-    let days = document.querySelector("#days").value;
-    let guests = document.querySelector("#guests").value;
-    let breakfast = document.querySelector("#yes").checked;
+    const days = document.querySelector("#days").value;
+    const guests = document.querySelector("#guests").value;
+    const breakfast = document.querySelector("#yes").checked;
     
     const night = 50;
     const person = 10;
@@ -21,7 +21,7 @@ function calc() {
         let result = night * days
         return result
     } else {
-        console.log("Fehlermeldung 404 Error ohje ohje")
+        return result
     };
 
 }
@@ -36,5 +36,3 @@ function run(days , guests , breakfast) {
 
 run();
 
-
-// 
